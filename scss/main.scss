@@ -19,6 +19,7 @@ body {
   font-family: 'Segoe UI', 'Tahoma', Geneva, Verdana, sans-serif;
   line-height: 1.5;
   font-size: 1.6rem;
+  z-index: 1;
 }
 
 // Headings
@@ -71,8 +72,11 @@ main {
       }
     }
   }
+
   &#home {
     overflow: hidden;
+    @include easeOut;
+    z-index: 1;
     h1 {
       margin-top: 20vh;
     }
