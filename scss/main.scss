@@ -1,6 +1,79 @@
-$primary-color: #444;
+@import 'config';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px;
+}
 
 body {
+  @include background;
   background: $primary-color;
   color: #fff;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Tahoma', Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
+// Headings
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: 400;
+  &.lg-heading {
+    font-size: 9.6rem;
+  }
+  &.sm-heading {
+    margin-bottom: 3.2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+main {
+  padding: 6.4rem;
+  height: 100%;
+
+  .icons {
+    margin-top: 1.6rem;
+    a {
+      padding: 0.6rem;
+      display: inline-block;
+      @include easeOut;
+      &:hover {
+        color: $secondary-color;
+        transform: translateY(-3px);
+        text-shadow: 0 6px 6px #333;
+      }
+    }
+  }
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
+    }
+  }
 }

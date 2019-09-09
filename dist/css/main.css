@@ -1,3 +1,77 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
 body {
   background: #444;
-  color: #fff; }
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Tahoma', Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-size: 1.6rem; }
+  body#bg-img {
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(68, 68, 68, 0.8); }
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading,
+  h4.lg-heading {
+    font-size: 9.6rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading,
+  h4.sm-heading {
+    margin-bottom: 3.2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5); }
+
+.text-secondary {
+  color: #eece1a; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+main {
+  padding: 6.4rem;
+  height: 100%; }
+  main .icons {
+    margin-top: 1.6rem; }
+    main .icons a {
+      padding: 0.6rem;
+      display: inline-block;
+      transition: all 0.5s ease-out; }
+      main .icons a:hover {
+        color: #eece1a;
+        transform: translateY(-3px);
+        text-shadow: 0 6px 6px #333; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }
