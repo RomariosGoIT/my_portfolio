@@ -175,6 +175,20 @@ h4 {
     margin-bottom: 3.2rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
+    h1.sm-heading .txt,
+    h2.sm-heading .txt,
+    h3.sm-heading .txt,
+    h4.sm-heading .txt {
+      border-right: 2px solid #777;
+      animation: blink 0.7s infinite; }
+
+@keyframes blink {
+  0% {
+    border-right: 2px solid rgba(255, 255, 255, 0); }
+  50% {
+    border-right: 2px solid rgba(255, 255, 255, 0.5); }
+  100% {
+    border-right: 2px solid rgba(255, 255, 255, 0.9); } }
 
 .text-secondary {
   color: #eece1a; }

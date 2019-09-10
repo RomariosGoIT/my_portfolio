@@ -38,6 +38,24 @@ h4 {
     margin-bottom: 3.2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
+    .txt {
+      border-right: 2px solid #777;
+      animation: blink 0.7s infinite;
+    }
+  }
+}
+
+@keyframes blink {
+  0% {
+    border-right: 2px solid rgba(#fff, 0);
+  }
+
+  50% {
+    border-right: 2px solid rgba(#fff, 0.5);
+  }
+
+  100% {
+    border-right: 2px solid rgba(#fff, 0.9);
   }
 }
 
