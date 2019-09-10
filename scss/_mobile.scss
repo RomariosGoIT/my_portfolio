@@ -52,4 +52,15 @@
     margin-top: 10vh;
     font-size: 6rem;
   }
+
+  .svg {
+    flex-flow: column;
+    align-items: center;
+    .text-1 {
+      width: 100%;
+    }
+    .text-2 {
+      width: 100%;
+    }
+  }
 }

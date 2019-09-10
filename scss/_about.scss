@@ -36,3 +36,58 @@
     border-bottom: 5px solid $secondary-color;
   }
 }
+
+// SVG Animation
+
+$color: #f3f3f3;
+$stroke-width: 2px;
+$size: 136px;
+
+.svg {
+  display: flex;
+  margin-top: 20vh;
+  margin-bottom: 2rem;
+  .text-1 {
+    margin-right: 1rem;
+    text {
+      stroke-width: $stroke-width;
+      stroke-dasharray: 800;
+      stroke-dashoffset: -800;
+      animation: text1 3s 1 forwards;
+    }
+  }
+  .text-2 {
+    text {
+      stroke-width: $stroke-width;
+      stroke-dasharray: 800;
+      stroke-dashoffset: -800;
+      animation: text2 3s 1 forwards;
+    }
+  }
+}
+
+@keyframes text1 {
+  75% {
+    fill: transparent;
+    stroke-dashoffset: 0;
+    stroke-width: $stroke-width;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: $color;
+    stroke-width: 0;
+  }
+}
+
+@keyframes text2 {
+  75% {
+    fill: transparent;
+    stroke-dashoffset: 0;
+    stroke-width: $stroke-width;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: $secondary-color;
+    stroke-width: 0;
+  }
+}
