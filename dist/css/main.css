@@ -221,7 +221,8 @@ body {
   body#bg-img {
     background: url(../img/background.jpg) no-repeat;
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
     body#bg-img:after {
       content: '';
       position: fixed;
