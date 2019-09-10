@@ -175,7 +175,7 @@ body {
   font-size: 1.6rem;
   z-index: 1; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../img/background.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
