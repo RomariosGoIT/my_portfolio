@@ -58,3 +58,12 @@ $bg-opacity: 0.8;
     @content;
   }
 }
+
+// Set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

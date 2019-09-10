@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
       this.textEl.innerHTML = `<span class="txt">${this.txt}</span>`;
 
       //Initial type Speed
-      let typeSpeed = 200;
+      let typeSpeed = 100;
 
       this.isDeleted ? (typeSpeed /= 2) : null;
 

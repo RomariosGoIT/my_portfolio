@@ -1,6 +1,8 @@
 @import 'config';
 @import 'menu';
 @import 'mobile';
+@import 'about';
+@import 'footer';
 
 * {
   box-sizing: border-box;
@@ -13,7 +15,7 @@ html {
 body {
   @include background;
   background: $primary-color;
-  color: #fff;
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
   padding: 0;
@@ -64,7 +66,7 @@ h4 {
 }
 
 a {
-  color: #fff;
+  color: set-text-color($primary-color);
   text-decoration: none;
 }
 
@@ -76,7 +78,7 @@ header {
 
 main {
   padding: 6.4rem;
-  height: 100vh;
+  height: 100%;
 
   .icons {
     margin-top: 1.6rem;

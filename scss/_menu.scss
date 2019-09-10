@@ -12,7 +12,7 @@
     width: 28px;
     height: 3px;
     margin-bottom: 5px;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -112,7 +112,7 @@
     text-transform: uppercase;
     padding: 1.5rem 0;
     font-weight: 400;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
     &.current {
@@ -127,6 +127,8 @@
     }
   }
 }
+
+
 
 // Delay each nav item slide by 0.1s
 
