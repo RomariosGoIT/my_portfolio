@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuNav = document.querySelector('.menu-nav');
   const menuBranding = document.querySelector('.menu-branding');
   const menuItem = document.querySelectorAll('.nav-item');
-  const txtElement = document.querySelector('.sm-heading');
+  const txtElement = document.querySelector('.animated');
 
   // Set initial state of menu
 

@@ -50,6 +50,10 @@
       'job3';
     grid-template-columns: 1fr;
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 // Phones
@@ -58,8 +62,16 @@
     padding: 0;
   }
   main#home h1 {
-    margin-top: 10vh;
+    margin-top: 35vh;
     font-size: 6rem;
+  }
+
+  h1.lg-heading {
+    font-size: 7rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
   }
 
   .svg {
