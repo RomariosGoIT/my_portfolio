@@ -185,6 +185,25 @@
   background: black;
   color: #fff; }
 
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .contact div {
+    font-size: 2rem;
+    border: 3px solid #fff;
+    padding: 2rem 3rem;
+    margin-bottom: 4rem;
+    transition: all 0.5s ease-out; }
+    .contact div:hover {
+      padding: 1.5rem 2rem;
+      background: #eece1a;
+      color: #000; }
+      .contact div:hover span {
+        color: #000; }
+
 #main-footer {
   text-align: center;
   padding: 1.5rem;
