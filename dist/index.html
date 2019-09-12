@@ -25,9 +25,10 @@
         </ul>
       </nav>
     </header>
-    <main id="home">
-      <h1 class="lg-heading">Roman <span class="text-secondary">Basmansky</span></h1>
-      <!-- <div class="svg">
+    <main data-router-wrapper id="home">
+      <section data-router-view="home" class="home">
+        <h1 class="lg-heading">Roman <span class="text-secondary">Basmansky</span></h1>
+        <!-- <div class="svg">
         <svg class="text-1" xmlns="http://www.w3.org/2000/svg" width="275" height="122" viewBox="0 0 275 122">
           <text
             id="Roman"
@@ -56,25 +57,26 @@
           </text>
         </svg>
       </div> -->
-      <h2
-        class="sm-heading animated"
-        data-wait="3000"
-        data-words='["Front-End Developer", "HTML, CSS, SCSS, JavaScript, React, Node.js"]'
-      ></h2>
-      <div class="icons">
-        <a href="#!">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-        <a href="#!">
-          <i class="fab fa-facebook fa-2x"></i>
-        </a>
-        <a href="#!">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a href="#!">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
-      </div>
+        <h2
+          class="sm-heading animated"
+          data-wait="3000"
+          data-words='["Front-End Developer", "HTML, CSS, SCSS, JavaScript, React, Node.js"]'
+        ></h2>
+        <div class="icons">
+          <a href="#!">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="#!">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="#!">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="#!">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div>
+      </section>
     </main>
     <script src="js/main.js"></script>
   </body>

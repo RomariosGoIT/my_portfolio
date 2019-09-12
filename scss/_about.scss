@@ -1,17 +1,31 @@
-.about-info {
-  display: grid;
-  grid-gap: 3rem;
-  grid-template-areas:
-    'bioimage bio bio'
-    'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr);
+.about {
+  width: 100vh;
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  &-title {
+    margin-left: 50px;
+  }
+}
 
+.about-header {
+  display: flex;
   .bio-image {
-    grid-area: bioimage;
+    max-width: 250px;
+    height: 250px;
     margin: auto;
     border-radius: 50%;
     border: 3px solid $secondary-color;
   }
+}
+
+.about-info {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-areas:
+    'bio bio bio'
+    'job1 job2 job3';
+  grid-template-columns: repeat(3, 1fr);
 
   .bio {
     grid-area: bio;
